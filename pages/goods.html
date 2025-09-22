@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Наш сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .nav {
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        
+        .nav a:hover {
+            background-color: #555;
+        }
+        
+        .main-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .product-name {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Хэдер -->
+    <header class="header">
+        <h1>Наш сайт</h1>
+    </header>
+
+    <!-- Меню навигации -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="goods.html">Товары</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <h2>Наши товары</h2>
+        <div class="products-grid">
+            <!-- Товар 1 -->
+            <div class="product-card">
+                <div class="product-image">Изображение товара 1</div>
+                <h3 class="product-name">Смартфон Premium X</h3>
+                <div class="product-price">25 990 ₽</div>
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product-card">
+                <div class="product-image">Изображение товара 2</div>
+                <h3 class="product-name">Ноутбук Pro 15</h3>
+                <div class="product-price">89 990 ₽</div>
+            </div>
+
+            <!-- Товар 3 -->
+            <div class="product-card">
+                <div class="product-image">Изображение товара 3</div>
+                <h3 class="product-name">Наушники Wireless</h3>
+                <div class="product-price">7 490 ₽</div>
+            </div>
+
+            <!-- Товар 4 -->
+            <div class="product-card">
+                <div class="product-image">Изображение товара 4</div>
+                <h3 class="product-name">Часы Smart Watch</h3>
+                <div class="product-price">12 990 ₽</div>
+            </div>
+
+            <!-- Товар 5 -->
+            <div class="product-card">
+                <div class="product-image">Изображение товара 5</div>
+                <h3 class="product-name">Планшет Ultra</h3>
+                <div class="product-price">34 990 ₽</div>
+            </div>
+
+            <!-- Товар 6 -->
+            <div class="product-card">
+                <div class="product-image">Изображение товара 6</div>
+                <h3 class="product-name">Камера Pro 4K</h3>
+                <div class="product-price">45 990 ₽</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>&copy; 2024 Наш сайт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
